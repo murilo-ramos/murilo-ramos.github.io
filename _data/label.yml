@@ -6,14 +6,14 @@
 
 
 panel:
-  lastmod: "Recent Update"
-  trending_tags: "Trending Tags"
-  toc: "Contents"
+  lastmod: "Atualizações Recentes"
+  trending_tags: "Tags Populares"
+  toc: "Conteúdo"
 
 post:
-  relate_posts: "Further Reading"
+  relate_posts: "Para Ler Depois"
   button:
-    next: Newer
-    previous: Older
+    next: Novo
+    previous: Antigo
 
-search_hint: "Search"   # text show on search bar
+search_hint: "Buscar"   # text show on search bar
