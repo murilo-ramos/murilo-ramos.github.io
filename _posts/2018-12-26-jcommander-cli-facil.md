@@ -15,7 +15,7 @@ Como forma de resolver esse problema vou apresentar a biblioteca JCommander, que
 Para demonstração vamos criar um projeto Java com o Maven que será uma calculadora bem simples, então vamos ao código:
 {: style="text-align: justify;"}
 
-Vamos criar o projeto jcommander-calc-sample com o Maven e adicionar o JCommander ao pom.xml (estou usando o Eclipse como IDE neste exemplo).
+Vamos criar o projeto jcommander-calc-sample com o Maven e adicionar o JCommander ao `pom.xml` (estou usando o Eclipse como IDE neste exemplo).
 {: style="text-align: justify;"}
 
 ```xml
@@ -29,9 +29,12 @@ Vamos criar o projeto jcommander-calc-sample com o Maven e adicionar o JCommande
 ```
 
 Neste exemplo vamos trabalhar com três parâmetros, sendo eles:
-Primeiro valor: tipo Double
-Segundo valor: tipo Double
-Operação: tipo Enum contendo as operações de soma, subtração, multiplicação e divisão
+
+Primeiro valor: tipo `Double`
+
+Segundo valor: tipo `Double`
+
+Operação: tipo `Enum` contendo as operações de soma, subtração, multiplicação e divisão
 
 Vamos criar então a classe contendo a enum de operações:
 
@@ -84,7 +87,7 @@ public class CalcParameters {
 É importante observar que é nesta classe que  definimos os nomes dos parâmetros, se são obrigatórios, o separador a ser utilizado e etc.
 {: style="text-align: justify;"}
 
-Com estas classes criadas agora podemos criar a clase Main, que será responsável por executar a aplicação:
+Com estas classes criadas agora podemos criar a clase `Main`, que será responsável por executar a aplicação:
 {: style="text-align: justify;"}
 
 ```java
@@ -140,12 +143,12 @@ public class Main {
 }
 ```
 
-Como pode ser visto a utilização do JCommander é muito simples, bastando somente chamar seu builder com a instrução JCommander.newBuilder(), adicionar o objeto da classe de parâmetros com o addObject(), chamar o build() e finalizar com o parse(), passando o array de strings que contem os parâmetros de execução via linha de comando, onde o JCommander irá parseá-los de acordo com a classe de configuração.
+Como pode ser visto a utilização do JCommander é muito simples, bastando somente chamar seu builder com a instrução `JCommander.newBuilder()`, adicionar o objeto da classe de parâmetros com o `addObject()`, chamar o `build()` e finalizar com o `parse()`, passando o array de strings que contem os parâmetros de execução via linha de comando, onde o JCommander irá parseá-los de acordo com a classe de configuração.
 {: style="text-align: justify;"}
 
 Sendo assim, podemos gerar um jar executável e rodar um teste para ver o resultado.
 
-Para gerar um jar executável, adicione a seguinte instrução no pom.xml e depois execute o comando mvn package:
+Para gerar um jar executável, adicione a seguinte instrução no `pom.xml` e depois execute o comando `mvn package`:
 {: style="text-align: justify;"}
 
 ```xml
@@ -194,7 +197,7 @@ Assim podemos executar a aplicação:
     Resultado: 3.0
 
 
-Acredito que você tenha percebido um problema na aplicação com relação a enum Operation, pois apesar do JCommander conseguir interpretar nativamente uma enum, não existe uma validação para verificar se é um valor válido  de enum, e ficou bem esquisito chamar a enum pelo nome nos parâmetros, como ADD, SUBTRACT e DIVIDE.
+Acredito que você tenha percebido um problema na aplicação com relação a enum `Operation`, pois apesar do JCommander conseguir interpretar nativamente uma enum, não existe uma validação para verificar se é um valor válido  de enum, e ficou bem esquisito chamar a enum pelo nome nos parâmetros, como ADD, SUBTRACT e DIVIDE.
 {: style="text-align: justify;"}
 
 Para resolver esse problema o JCommander permite que criemos um mecanismo para converter um determinado parâmetro para um tipo específico  de objeto, facilitando assim a entrada do usuário.
@@ -236,7 +239,7 @@ public enum Operation {
 }
 ```
 
-Agora vamos criar uma class 'Converter' que será usada pelo JCommander para converter o parâmetro do input para nosso tipo específico. Neste caso o parâmetro será um string contendo o nome  da operação e o converter irá converter essa string para um valor da enum usando o método criado anteriormente. Para fazer isso criamos a classe implementando a interface IStringConverter\<T\>.
+Agora vamos criar uma classe `Converter` que será usada pelo JCommander para converter o parâmetro do input para nosso tipo específico. Neste caso o parâmetro será um string contendo o nome  da operação e o converter irá converter essa string para um valor da enum usando o método criado anteriormente. Para fazer isso criamos a classe implementando a interface `IStringConverter\<T\>`.
 {: style="text-align: justify;"}
 
 ```java
@@ -258,7 +261,7 @@ E agora adicionamos esse converter na classe de parâmetros:
 private Operation operation;
 ```
 
-Por fim alteramos a classe Main para exibir o nome da operação:
+Por fim alteramos a classe `Main` para exibir o nome da operação:
 
 ```java
 System.out.println("Primeiro valor: " + firstValue);
