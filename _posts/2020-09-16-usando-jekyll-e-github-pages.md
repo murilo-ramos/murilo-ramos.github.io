@@ -18,18 +18,18 @@ Para instalar o Jekyll é só seguir as instruções [aqui](https://jekyllrb.com
 
 ## **Escolhendo o tema**
 
-Uma vez instalado o Jekyll você já está pronto para gerar seu site estático e isso pode ser feito do zero ou então utilizando um tema. Para facilitar as coisas eu preferi usar um tema pronto (aqui podem ser encontrados vários) e o escolhido foi o Chirpy.
+Uma vez instalado o Jekyll você já está pronto para gerar seu site estático e isso pode ser feito do zero ou então utilizando um tema. Para facilitar as coisas eu preferi usar um tema pronto ([aqui](https://jekyllrb.com/resources/){:target="_blank"} existem links para coleções deles) e o escolhido foi o Chirpy.
 {: style="text-align: justify;"}
 
-Este tema é bem interessante e possui vários recursos avançados para distribuição de posts em categorias, tags, já possui integração e otimização para o Google Analytics, Disqus e várias outras coisas de forma automática.
+Este tema é bem interessante e possui vários recursos avançados para distribuição de posts em categorias, tags, já possui integração e otimização para o [Google Analytics](https://pt.wikipedia.org/wiki/Google_Analytics){:target="_blank"}, [Disqus](https://disqus.com/){:target="_blank"} e várias outras coisas de forma automática.
 {: style="text-align: justify;"}
 
 ## **Obtendo o tema**
 
-Pelo que eu pude perceber todos os temas que achei tem seu código hospedado no GitHub, então para obter um basta pegar de lá, seguindo o tutorial que geralmente o mantenedor disponbiliza no README.md do [repositório](https://github.com/cotes2020/jekyll-theme-chirpy){:target="_blank"}.
+Pelo que eu pude perceber todos os temas que achei tem seu código hospedado no GitHub, então para obter um basta pegar de lá, seguindo o tutorial que geralmente o mantenedor disponbiliza no README.md do repositório.
 {: style="text-align: justify;"}
 
-O tema que utilizei está aqui. Eu acabei fazendo um pouco diferente do que está no tutorial deste tema pois ele indica que você deve fazer um 'fork' do repositório do tema, coisa que eu não fiz pois preferi baixar o conteúdo direto na minha máquina e utilizar o repositório no GitHub que eu já tinha murilo-ramos.github.io, mas os próximos passos são iguais.
+O tema que utilizei está [aqui](https://github.com/cotes2020/jekyll-theme-chirpy){:target="_blank"}. Eu acabei fazendo um pouco diferente do que está no tutorial deste tema pois ele indica que você deve fazer um 'fork' do repositório, coisa que eu não fiz pois preferi baixar o conteúdo direto na minha máquina e utilizar o repositório no GitHub que eu já tinha `murilo-ramos.github.io`, mas os próximos passos são iguais.
 {: style="text-align: justify;"}
 
 Mas se for sua primeira vez fazendo algo do tipo eu sugiro seguir os passos do tutorial, que vou seguir daqui pra frente, então vamos fazer um fork do repositório `https://github.com/cotes2020/jekyll-theme-chirpy` e ter o repositório `murilo-ramos/jekyll-theme-chirpy`.
@@ -47,7 +47,7 @@ Daqui pra frente os passos serão bem específicos para o tema que escolhi e por
 Este tema possui uma série de processos extras que fazem a categorização, conjunto de tags, atualização de posts e etc, por isso ele precisa dessas coisas a mais.
 {: style="text-align: justify;"}
 
-Para baixarmos o tema basta um git clone do nosso repositório
+Para baixarmos o tema basta um git clone do nosso repositório:
 
     $ git clone https://github.com/murilo-ramos/jekyll-theme-chirpy.git
 
@@ -75,7 +75,7 @@ Para baixarmos o tema basta um git clone do nosso repositório
     drwxr-xr-x   6 murilo  staff   192 Sep 16 21:42 tabs
     drwxr-xr-x   9 murilo  staff   288 Sep 16 21:42 tools
 
-Seguindo o tutorial do tema, temos que terminar de instalar as dependências do tema rodando o seguinte comando:
+Seguindo o tutorial do tema, temos que terminar de instalar as dependências rodando o seguinte comando:
 {: style="text-align: justify;"}
 
     $ bundle install
@@ -112,7 +112,7 @@ Neste comando existe uma opção para que sejam excluídas as configurações de
 
 ## **Configurando e personalizando o tema**
 
-As configurações principais ficam no arquivo `_config.yml` e vou descrever as principais aqui.
+As configurações principais ficam no arquivo `_config.yml` e vou colocar aqui as que achei mais importantes.
 
     title: Chirpy                          # Título do site que será exibido na barra lateral abaixo do avatar
 
@@ -202,7 +202,7 @@ E dentro de `_data/share.yml` alterei também as configurações de compartilham
         icon: "fab fa-linkedin"
         link: "https://www.linkedin.com/sharing/share-offsite/?url=URL"
 
-Podemos alterar também o favicon do site de acordo com o tutorial, que basicamente consiste em usar o seu avatar para gerar as imagens no pelo site [Favicon Generator](https://www.favicon-generator.org/){:target="_blank"}, onde você pode usar a sua imagem de avatar pra gerar as imagens de favicon.
+Podemos alterar também o favicon do site de acordo com o tutorial, que basicamente consiste em usar o seu avatar para gerar as imagens no pelo site [Favicon Generator](https://www.favicon-generator.org/){:target="_blank"}.
 {: style="text-align: justify;"}
 
 Após a geração, baixe o arquivo gerado e descompacte em sua máquina e exclua os arquivos `browserconfig.xml` e `manifest.json` que vieram junto com o arquivo. Por fim copie todas as imagens para o local `assets/img/favicons` do seu repositório.
@@ -215,10 +215,10 @@ E para finalizar a personalização eu também coloquei o site todo em portuguê
 
 ## **Alterando o About (Sobre)**
 
-Você deve ter percebido que existe uma seção 'About' no menu da esquerda, e essa seção é uma página para falar um sobre você.
+Você deve ter percebido que existe uma seção 'About' no menu da esquerda, e essa seção é uma página para falar um pouco sobre você.
 {: style="text-align: justify;"}
 
-Para adicionar um texto lá é só adicionar o texto no arquivo `tabs/about.md`. O texto deve ser feito em `Markdown`.
+Para colocar um texto lá é só adicionar no arquivo `tabs/about.md`. O texto deve ser feito em `Markdown`.
 {: style="text-align: justify;"}
 
 ![about](/assets/img/posts/usando-jekyll-e-github-pages/about.png)
@@ -231,7 +231,7 @@ Agora com todas as configurações prontas podemos rodar o comando `bash tools/r
 Mas você deve ter notado que ainda não temos nenhum post no site, então vamos fazer um de exemplo.
 {: style="text-align: justify;"}
 
-Para se fazer um post é necessário colocar um arquivo em `_posts`tendo o nome como `data-nome-do-post.md`.
+Para se fazer um post é necessário colocar um arquivo em `_posts` tendo o nome como `data-nome-do-post.md`.
 {: style="text-align: justify;"}
 
 Exemplo: `2020-09-20-meu-primeiro-post.md`
@@ -265,10 +265,10 @@ Alguns pontos sobre o cabeçalho:
 
 `tags`: As tags que identificam o post, e que também serão agrupadas com outros posts
 
-O conteúdo precisa ser feito em markdown e neste tema é usado o kramdown que possui vários artifícios de estilização do texto, veja na [documentação oficial](https://kramdown.gettalong.org/syntax.html){:target="_blank"}.
+O conteúdo precisa ser feito em markdown e neste tema é usado o kramdown que possui vários artifícios de estilização de texto, veja na [documentação oficial](https://kramdown.gettalong.org/syntax.html){:target="_blank"}.
 {: style="text-align: justify;"}
 
-Depois de salvar o arquivo é só rodar bash `tools/run.sh` novamente para já visualizar o post na tela principal, e verificar também que as páginas de categorias, tags e arquivo foram populadas.
+Depois de salvar o arquivo é só rodar `bash tools/run.sh` novamente para já visualizar o post na tela principal, e verificar também que as páginas de categorias, tags e arquivo foram populadas.
 {: style="text-align: justify;"}
 
 **Dica:** É possível rodar o comando `bash tools/run.sh` somente uma vez e então ir fazendo as modificações necessárias que o jekyll irá atualizar o site automaticamente. Se isto não acontecer verifique no tutorial oficial utilização do `fswatch`, que funcionou pra mim.
@@ -291,7 +291,7 @@ Para colocar no GitHub Pages será necessário primeiro uma modificação inconv
 
 ![seulogin-github-io](/assets/img/posts/usando-jekyll-e-github-pages/seulogin-github-io.png)
 
-E o inconveniente aqui é que o endereço do seu repositório foi alterado, obrigando você a trocar o `remote` (endereço no GitHub) no git. Se você não quer perder tempo com isso sugiro simplesmente fazer novamente um clone do seu repositório, que já terá o remote correto.
+E o inconveniente aqui é que o endereço do seu repositório foi alterado, obrigando você a trocar o `remote` (endereço no GitHub) no seu git. Se você não quer perder tempo com isso sugiro simplesmente fazer novamente um clone do seu repositório, que já terá o remote correto.
 {: style="text-align: justify;"}
 
 Após essa configuração, se estivessemos usando algum outro tema de Jekyll mais simples o site já estaria no ar e nenhuma configuração adicional seria necessária, porém como o tema que estamos utilizando é um pouco mais completo, é necessária mais uma configuração no GitHub. Procure nas configurações do seu repositório na seção 'GitHub Pages' e selecione o branch 'gh-pages' como Origem/Source, pois esse é um branch digamos que 'compilado' pelo tema e já pronto para visualização. Esse branch é gerado toda vez que um commit/push acontece no repositório, iniciado através do mecanismo de [GitHub Actions](https://github.com/features/actions){:target="_blank"}.
