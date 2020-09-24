@@ -1,7 +1,7 @@
 ---
 title: Peça ajuda. Ofereça ajuda. Não seja bobo.
 author: Murilo Costa
-date: 2020-09-25 07:00:00 -0300
+date: 2020-09-24 17:30:00 -0300
 categories: [Blogging, Dicas]
 tags: [murilo-tech, dicas, programacao, equipe, ajuda]
 ---
