@@ -15,6 +15,8 @@ Lendo os comentários nas threads eu fiquei com a sensação de que existem perc
 Por isso decidi escrever um pouco sobre o assunto, compartilhando minhas experiências pessoais e as atitudes que tomei nessas situações, para quem sabe motivar quem passar por aqui a pedir ou oferecer ajuda da melhor forma possível.
 {: style="text-align: justify;"}
 
+![handshake](/assets/img/posts/peca-ajuda-ofereca-ajuda-nao-seja-bobo/handshake.jpg)
+
 ## **Peça ajuda**
 
 Peça ajuda! Não hesite, não fique com medo de ser ridicularizado ou coisa do tipo, pedir ajuda é algo normal que todo mundo já fez alguma vez na vida, ou então vai fazer, e em muito casos é a melhor forma de resolver aquele problema que você pode estar enfrentando durante um bom tempo. E se você acha que estou falando demais, dou palavra aqui ao [Uncle Bob](https://en.wikipedia.org/wiki/Robert_C._Martin){:target="_blank"} que escreveu o seguinte no seu livro [O Codificador Limpo](https://www.altabooks.com.br/produto/o-codificador-limpo/){:target="_blank"} (em inglês *Clean Coder*):
