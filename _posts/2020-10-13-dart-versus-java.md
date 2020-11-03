@@ -9,7 +9,7 @@ tags: [java, dart, flutter, programacao, linguagem, orientacao-a-objetos]
 Esse ano comecei a fazer um curso de [Flutter](https://flutter.dev/){:target="_blank"}, que é uma plataforma de desenvolvimento mobile (e no futuro web também) e estou gostando bastante de fazer apps com ela, pois seus recursos de criação de tela via [Widgets](https://flutter.dev/docs/reference/widgets){:target="_blank"}, uso padrão de [Material Design](https://material.io/design){:target="_blank"} e suporte nativo a multiplataforma tornam o desenvolvimento bem interessante.
 {: style="text-align: justify;"}
 
-Porém além desses pontos, o que mais tem me chamado atenção nessa paltaforma é o [Dart](https://dart.dev/){:target="_blank"} que é a linguagem utilizada para desenvolvimento, e devido a sua semelhança fica impossível de não compará-la com uma das linguagens que mais utilizo atualmente, que é o Java, onde me parece que o Dart é um Java mais sofisticado contendo melhorias nativas que tornam a escrita de código bem mais interessante.
+Porém além desses pontos, o que mais tem me chamado atenção nessa plataforma é o [Dart](https://dart.dev/){:target="_blank"} que é a linguagem utilizada para desenvolvimento, e devido a sua semelhança fica impossível de não compará-la com uma das linguagens que mais utilizo atualmente, que é o Java, onde me parece que o Dart é um Java mais sofisticado contendo melhorias nativas que tornam a escrita de código bem mais interessante.
 {: style="text-align: justify;"}
 
 Por isso resolvi fazer esse post apontando umas diferenças entre essas duas linguagens, colocando os pontos onde o Dart apresenta melhorias significativas perante o Java e também outros pontos onde, na minha opinião, o Java ainda é superior.

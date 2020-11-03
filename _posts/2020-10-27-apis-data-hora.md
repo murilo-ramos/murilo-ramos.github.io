@@ -29,7 +29,7 @@ Isso pode até parecer bobeira, mas é algo que pode causar confusão. Vamos ver
 ```java
 Calendar calendar = Calendar.getInstance();
 calendar.set(2020, 9, 21);
-Date date = Date()
+Date date = calendar.getTime();
 
 Date currentDate = new Date();
 
@@ -85,7 +85,7 @@ date.getDate();
 date.getDay();
 ```
 
-Os métodos do objeto `date` parecem normais até o `getDate()` e `getDay()` certo? E são exatamente esses dois que tem o problema, pois no caso o `getDay()` retorna o dia da semana (representado po um inteiro de 0 a 6) e `getDate()` retorna (pasmem) o dia do mês entre 1 e 31.
+Os métodos do objeto `date` parecem normais até o `getDate()` e `getDay()` certo? E são exatamente esses dois que tem o problema, pois no caso o `getDay()` retorna o dia da semana (representado por um inteiro de 0 a 6) e `getDate()` retorna (pasmem) o dia do mês entre 1 e 31.
 {: style="text-align: justify;"}
 
 Ai vocês devem perceber que o `getDay()` realmente poderia ter um nome melhor como `getDayOfWeek()`, mas o maior problema aqui é ter um método `getDate()` que retorna o dia do mês, isso parece não ter sentido algum e na minha opinião continua não tendo. Porém, afim de tentar entender isso melhor, eu conversei com amigos que possuem uma vivência maior no inglês e me disseram que em alguns casos se utiiza o termo `date` para se referenciar um dia, seja ele dia do mês ou dia do ano, e talvez no momento da construção da API tenham levado isso em conta.
@@ -135,7 +135,7 @@ fmtDate := date.Format("02/01/2006 15:04:05")
 
 Não, isso não está errado!
 
-Em Golang são utilizados números para representar formatos de data e hora, o que é totalmente diferente de qualquer outra linguagem que eu conheço.
+Em Golang são utilizados números e nomes para representar formatos de data e hora, o que é totalmente diferente de qualquer outra linguagem que eu conheço.
 {: style="text-align: justify;"}
 
     Formato:                    Identificador: 
@@ -157,7 +157,7 @@ Em Golang são utilizados números para representar formatos de data e hora, o q
 
 Bizarro não é?
 
-Eu procurei saber porquê foi escolhida essa abordagem de números ao invés da abordagem tradicional e me parece que isso foi uma tentativa de [facilitar a memorização das representações](https://medium.com/@simplyianm/how-go-solves-date-and-time-formatting-8a932117c41c){:target="_blank"}, que geralmente nenhum desenvolvedor sabe de cabeça (nisso eu concordo), porém para mim ainda continua sendo bem esquisita essa formatação, e quando vejo isso em um código demoro um tempo para assimilar rs, mas talvez isso também seja devido ao fato de não trabalhar muito com a linguagem.
+Eu procurei saber porquê foi escolhida essa abordagem de números e nomes ao invés da tradicional e me parece que isso foi uma tentativa de [facilitar a memorização das representações](https://medium.com/@simplyianm/how-go-solves-date-and-time-formatting-8a932117c41c){:target="_blank"}, que geralmente nenhum desenvolvedor sabe de cabeça (nisso eu concordo), porém para mim ainda continua sendo bem esquisita essa formatação, e quando vejo isso em um código demoro um tempo para assimilar rs, mas talvez isso também seja devido ao fato de não trabalhar muito com a linguagem.
 {: style="text-align: justify;"}
 
 E você, já se deparou com alguma coisa esquisita usando as APIs de data e hora da sua linguagem favorita? Ou tem uma explicação mais elaborada para os itens que coloquei aqui?
