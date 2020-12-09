@@ -16,5 +16,5 @@ Meu nome é Murilo Costa e trabalho como desenvolvedor de software desde 2008, o
 Durante minha carreira trabalhei no desenvolvimento de diversos tipos de sistemas, inclusive comerciais, aplicativos de controle de qualidade e gestão da produção para linhas de produção de fábricas, sistemas de personalização de smart cards, serviços de integração por meio de rotinas automatizadas e web services, e também trabalhei em sistemas de suporte e administração de pequenas bases de dados e servidores de aplicação e sistemas de gestão de documentos.
 {: style="text-align: justify;"}
 
-Fora da bolha tecnológica você geralmente pode me encontrar brincando com minha filha e meu filho, pescando ou então tocando contrabaixo na banda [UnderStairs](https://www.facebook.com/bandaunderstairs/){:target="_blank"}.
+Fora da bolha tecnológica você geralmente pode me encontrar brincando com minha filha e meu filho, pescando ou então tocando contrabaixo na banda [UnderStairs](https://www.facebook.com/understairsband/){:target="_blank"}.
 {: style="text-align: justify;"}
