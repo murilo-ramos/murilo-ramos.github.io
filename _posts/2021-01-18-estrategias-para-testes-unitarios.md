@@ -244,7 +244,8 @@ namespace FileReader
             }
         }
 
-        private MySqlConnection CreateDatabaseConnection() {
+        private MySqlConnection CreateDatabaseConnection()
+        {
             var databaseConnectionBuilder = new MySqlConnectionStringBuilder
             {
                 Server   = "localhost",

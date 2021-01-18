@@ -632,7 +632,8 @@ namespace FileReader
             }
         }
 
-        private string getGender(string gender) {
+        private string getGender(string gender)
+        {
             switch (gender)
             {
                 case "M":
@@ -646,7 +647,8 @@ namespace FileReader
             }
         }
 
-        private MySqlConnection createDatabaseConnection() {
+        private MySqlConnection createDatabaseConnection()
+        {
             var databaseConnectionBuilder = new MySqlConnectionStringBuilder
             {
                 Server   = "localhost",
@@ -659,7 +661,8 @@ namespace FileReader
             return new MySqlConnection(databaseConnectionBuilder.ConnectionString);
         }
 
-        private DateTime parseDate(string date) {
+        private DateTime parseDate(string date)
+        {
             return DateTime.ParseExact(date, DateFormat, System.Globalization.CultureInfo.InvariantCulture);
         }
     }
