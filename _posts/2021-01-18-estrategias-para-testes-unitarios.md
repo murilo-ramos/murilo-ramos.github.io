@@ -2,7 +2,7 @@
 title: Estratégias para testes unitários
 author: Murilo Costa
 date: 2021-01-18 07:30:00 -0300
-categories: [Blogging, C#]
+categories: [Blogging, C#, Testes]
 tags: [unit-test, teste-unitario, solid, c#, xunit, moq, dotnet]
 ---
 
