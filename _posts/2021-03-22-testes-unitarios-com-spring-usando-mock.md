@@ -6,7 +6,7 @@ categories: [Blogging, Java, Testes, Dicas]
 tags: [java, test, junit, mockito, easy-mock, spring, framework, mock]
 ---
 
-Atualmente podemos dizer [Spring Framework](https://spring.io/){:target="_blank"} é a escolha de praticamente todos os desenvolvedores Java que estão iniciando em um novo projeto, e não é pra menos pois esse framework conseguiu reunir em um lugar só toda a facilidade para desenvolvimento de aplicações Web com sua criação de serviços REST, acesso a dados, gerenciamento de filas e acesso a outros serviços, tornando-se um padrão entre seus desenvolvedores.
+Atualmente podemos dizer que o [Spring Framework](https://spring.io/){:target="_blank"} é a escolha de praticamente todos os desenvolvedores Java que estão iniciando em um novo projeto, e não é pra menos pois esse framework conseguiu reunir em um lugar só toda a facilidade para desenvolvimento de aplicações Web com sua criação de serviços REST, acesso a dados, gerenciamento de filas e acesso a outros serviços, tornando-se um padrão entre seus desenvolvedores.
 {: style="text-align: justify;"}
 
 E além de tudo que o Spring oferece, algo que existe no framework desde sua criação e que ajuda e muito os desenvolvedores é a sua facilidade de trabalhar com injeção de dependências, pois ele possui um container de inversão de controle que permite facilmente injetar dependências em uma classe usando a famosa anotação mágica `@Autowired`.
